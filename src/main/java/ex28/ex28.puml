@@ -1,0 +1,6 @@
+@startuml
+:Initialize Array;
+:**Gather user input**;
+:Add numbers;
+:Output;
+@enduml
