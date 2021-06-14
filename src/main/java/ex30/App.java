@@ -1,6 +1,6 @@
 package ex30;
 
-public class base {
+public class App {
     public static void main(String [] args){
         multTable myTable = new multTable();
         myTable.genTable();

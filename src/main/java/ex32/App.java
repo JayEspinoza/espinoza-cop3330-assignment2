@@ -2,11 +2,12 @@ package ex32;
 import java.util.Scanner;
 import java.util.Random;
 
-public class base {
+public class App {
 
     public static void main(String [] args){
         System.out.printf("Let's play Guess the Number!%n%n");
         number game = new number();
+        game.generateNumber();
         game.guess();
     }
 }
@@ -20,7 +21,6 @@ class number {
 
 
     public number() {
-        generateNumber();
         guesses = 0;
     }
 

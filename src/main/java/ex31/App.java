@@ -2,7 +2,7 @@ package ex31;
 
 import java.util.Scanner;
 
-public class base {
+public class App {
     static Scanner userInput = new Scanner(System.in);
 
     public static void main(String [] args){
@@ -72,7 +72,7 @@ class heartRate{
         genRates(resting, age);
     }
 
-    private void genRates(int resting, int age){
+    public void genRates(int resting, int age){
         for(int i = 0; i < 9; i++){
             targetHeartRate[i] = (((220 - age) - resting) * (((i*5.00) + 55.00)/100.00)) + resting;
         }
@@ -84,5 +84,9 @@ class heartRate{
         for(int i = 0; i < 9; i++){
             System.out.printf("%d%%\t\t\t| %.0f bpm\n", (((i) * 5) + 55), targetHeartRate[i]);
         }
+    }
+
+    public double [] getRates(){
+        return targetHeartRate;
     }
 }

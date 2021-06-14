@@ -2,7 +2,7 @@ package ex34;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class base {
+public class App {
     static Scanner userInput = new Scanner(System.in);
 
     public static void main(String [] args){

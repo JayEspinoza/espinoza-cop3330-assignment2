@@ -2,11 +2,11 @@ package ex33;
 import java.util.Random;
 import java.util.Scanner;
 
-public class base {
+public class App {
     static Scanner userInput = new Scanner(System.in);
 
     public static void main(String [] args){
-        ball magicEight = new ball();
+        magicEight magicEight = new magicEight();
 
         System.out.printf("What's your question?%n> ");
         setUserInput();
@@ -18,11 +18,11 @@ public class base {
     }
 }
 
-class ball{
+class magicEight {
     private Random gen = new Random();
     private int num;
 
-    public ball(){
+    public magicEight(){
         num = gen.nextInt(4) + 1;
     }
 
