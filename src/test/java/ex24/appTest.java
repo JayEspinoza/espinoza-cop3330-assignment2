@@ -9,6 +9,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class appTest {
 
+    // User inputs ball and lalb
+    // isAnagram compares the entries
+    // Returns that they are anagrams
     @Test
     @DisplayName("ball and lalb")
     public void isAnagram() {

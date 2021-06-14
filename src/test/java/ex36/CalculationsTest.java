@@ -10,6 +10,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculationsTest {
 
+    // User inputs 100, 200, 1000, 300 for all 3 tests
+
+    // average calculates the average of the inputs
+    // Function returns 400
     @Test
     @DisplayName("Average")
     void average() {
@@ -24,6 +28,8 @@ class CalculationsTest {
         assertEquals(400, test.average(testList));
     }
 
+    // min finds minimum input
+    // Function returns 100
     @Test
     @DisplayName("Min")
     void min() {
@@ -38,6 +44,8 @@ class CalculationsTest {
         assertEquals(100, test.min(testList));
     }
 
+    // max finds maximum input
+    // Function returns 1000
     @Test
     @DisplayName("Max")
     void max() {
@@ -52,6 +60,8 @@ class CalculationsTest {
         assertEquals(1000, test.max(testList));
     }
 
+    // std calculates standard deviation
+    // Function returns 354 when rounded with ceil
     @Test
     @DisplayName("Standard Deviation")
     void std() {

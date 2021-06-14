@@ -9,6 +9,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class listManipulationTest {
 
+    // User inputs "Two"
+    // removeEmployee checks the list for "Two"
+    // testList at index 1 has a value of "Three"
     @Test
     @DisplayName("Remove Two")
     void removeEmployee() {

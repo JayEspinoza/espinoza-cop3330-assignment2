@@ -56,7 +56,7 @@ class investment{
         char[] check = rate.toCharArray();
         int invalidChar = 0;
 
-        //
+        // For loop checks for valid input
         for (char c : check) {
             if (!Character.isDigit(c)) {
                 invalidChar = 1;
@@ -65,6 +65,7 @@ class investment{
             }
         }
 
+        // If statement checks for valid input
         if (invalidChar != 1) {
             if(Double.parseDouble(rate) == 0) {
                 invalidChar = 1;
@@ -72,6 +73,8 @@ class investment{
             }
         }
 
+        // If-while combo continues to check for
+        // valid input
         if (invalidChar > 0) {
             while (invalidChar > 0) {
                 System.out.printf("What is the rate of return? ");
@@ -97,10 +100,14 @@ class investment{
         }
     }
 
+    // Function getsMonths
+    // Output: months
     public double getMonths(){
         return months;
     }
 
+    // Function getRate
+    // Output: rate
     public String getRate(){
         return rate;
     }

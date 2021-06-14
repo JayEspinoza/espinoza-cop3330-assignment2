@@ -6,6 +6,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class numbersTest {
 
+    // User inputs 10 for all 5 entries
+    // getTotal adds up the inputs
+    // Function returns 50
     @Test
     @DisplayName("Total: 50")
     void generateTotal() {

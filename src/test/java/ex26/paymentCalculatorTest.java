@@ -7,8 +7,11 @@ import java.lang.Math;
 
 class paymentCalculatorTest {
 
+    // User inputs 5000, 12, and 100 respectively
+    // calculateMonthsUntilPaidOff calculates the result
+    // Function returns 70 when rounded up for output
     @Test
-    @DisplayName("500, 12, 100")
+    @DisplayName("5000, 12, 100")
     void calculateMonthsUntilPaidOff() {
         paymentCalculator calc = new paymentCalculator();
 
